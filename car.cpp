@@ -5,7 +5,7 @@
 #include <cstddef>
 #include <cstring>
 // #include ......
-Car::Car() : manufacturer(""), model(""), zeroToSixtyNs(0), headonDragCoeff(0), horsepower(0), backseatDoors(None), seatCount(0) {
+Car::Car() : manufacturer(NULL), model(NULL), zeroToSixtyNs(0), headonDragCoeff(0), horsepower(0), backseatDoors(None), seatCount(0) {
 
 }
 
@@ -22,6 +22,7 @@ Car::Car(Car const& o){
     this->horsepower = o.getStats().horsepower;
     this->backseatDoors = o.getBackseatDoors();
     this->seatCount = o.getSeatCount();
+	//comment
 }
 
 Car::~Car(){
