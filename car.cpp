@@ -17,9 +17,9 @@ Car::Car(const char* const manufacturerName, const char* const modelName, Perfor
 Car::Car(Car const& o){
 	this->manufacturer = (char*)o.getManufacturer();
     this->model = (char*)o.getModel();
-    this->zeroToSixtyNs = o.zeroToSixtyNs;
-    this->headonDragCoeff = o.headonDragCoeff;
-    this->horsepower = o.horsepower;
+    this->zeroToSixtyNs = o.getStats().zeroToSixtyNs;
+    this->headonDragCoeff = o.getStats().headonDragCoeff;
+    this->horsepower = o.getStats().horsepower;
     this->backseatDoors = o.getBackseatDoors();
     this->seatCount = o.getSeatCount();
 }
