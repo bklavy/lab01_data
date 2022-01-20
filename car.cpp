@@ -44,11 +44,11 @@ Car& Car::operator=(Car const& o){
 
 
 char const* Car::getManufacturer() const{
-	return manufacturer;
+	return (char const*)manufacturer;
 }
 
 char const* Car::getModel() const{
-	return model;
+	return (char const*)model;
 }
 
 PerformanceStats Car::getStats() const{
